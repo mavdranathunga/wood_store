@@ -1,0 +1,100 @@
+/* src/css/Home.css */
+
+.home-container {
+  width: 100%;
+  text-align: center;
+}
+
+/* Hero Section */
+.hero {
+  background: url("../images/background1.jpg") center/cover no-repeat;
+  color: rgb(0, 0, 0);
+  padding: 80px 20px;
+  border-radius: 5px;
+}
+
+.hero h1 {
+  font-size: 3rem;
+  margin-bottom: 10px;
+}
+
+.hero p {
+  font-size: 1.2rem;
+  margin-bottom: 20px;
+}
+
+.explore-btn {
+  padding: 12px 20px;
+  font-size: 1rem;
+  background: #f8b400;
+  color: black;
+  border: none;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.explore-btn:hover {
+  background: #ffcc00;
+}
+
+/* Featured Products */
+.featured {
+  padding: 40px 20px;
+}
+
+.featured h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+.product-grid {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.product-card {
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  transition: 0.3s;
+  width: 280px;
+  text-align: center;
+}
+
+.product-card:hover {
+  transform: translateY(-5px);
+}
+
+.product-card img {
+  width: 100%;
+  border-radius: 5px;
+}
+
+/* Gallery */
+.gallery {
+  padding: 40px 20px;
+}
+
+.gallery h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+.gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 10px;
+}
+
+.gallery-grid img {
+  width: 100%;
+  border-radius: 5px;
+  transition: 0.3s;
+}
+
+.gallery-grid img:hover {
+  transform: scale(1.05);
+}
