@@ -7,7 +7,7 @@ const Home = () => {
     <div className="home-container">
       {/* Hero Section */}
       <section className="hero">
-        <h1>Welcome to Wood Store</h1>
+        <h1>Welcome to PGP - Wood Store</h1>
         <p>High-quality wood products for all your needs.</p>
         <button className="explore-btn">Explore Products</button>
       </section>
