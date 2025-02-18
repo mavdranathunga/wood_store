@@ -80,12 +80,6 @@ html, body {
   transition: 0.3s;
 }
 
-.navbar a:hover {
-  background-color: #f8b400;
-  border-radius: 5px;
-  color: black;
-}
-
 .page {
   flex: 1;
   display: flex;
