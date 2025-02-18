@@ -15,9 +15,7 @@ function Footer() {
           <Link to="/contact">Contact</Link>
         </div>
         <div className="social-icons">
-          <a href="#" target="_blank" rel="noopener noreferrer">📘</a>
-          <a href="#" target="_blank" rel="noopener noreferrer">🐦</a>
-          <a href="#" target="_blank" rel="noopener noreferrer">📸</a>
+          
         </div>
       </div>
     </footer>
