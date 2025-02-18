@@ -5,6 +5,12 @@ import "../css/Products.css";
 const products = [
   { name: "Oak Firewood", price: "$25" },
   { name: "Pine Logs", price: "$30" },
+  { name: "Sawdust Pack", price: "$15" },
+  { name: "Oak Firewood", price: "$25" },
+  { name: "Pine Logs", price: "$30" },
+  { name: "Sawdust Pack", price: "$15" },
+  { name: "Oak Firewood", price: "$25" },
+  { name: "Pine Logs", price: "$30" },
   { name: "Sawdust Pack", price: "$15" }
 ];
 

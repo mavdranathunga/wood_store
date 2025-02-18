@@ -2,7 +2,7 @@
 
 /* Nav bar*/
 .navbar {
-  background-color: #333;
+  background-color: #0f1652;
   padding: 15px 20px;
   display: flex;
   justify-content: space-between;
@@ -60,7 +60,7 @@ html, body {
 }
 
 .navbar {
-  background-color: #333;
+  background-color: #070c31;
   padding: 15px 0;
   display: flex;
   justify-content: center; /* Centers links */
@@ -97,7 +97,7 @@ html, body {
 }
 
 .footer {
-  background-color: #222;
+  background-color: #070c31;
   color: white;
   text-align: center;
   padding: 20px 0;

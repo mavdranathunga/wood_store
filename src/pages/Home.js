@@ -22,12 +22,12 @@ const Home = () => {
             <p>Perfect for fireplace and industrial use.</p>
           </div>
           <div className="product-card">
-            <img src="https://source.unsplash.com/300x200/?wood,chips" alt="Wood Chips"/>
+            <img src="../images/background2.jpg" alt="Wood Chips"/>
             <h3>Wood Chips</h3>
             <p>Ideal for gardening and smoking meat.</p>
           </div>
           <div className="product-card">
-            <img src="https://source.unsplash.com/300x200/?wood,sawdust" alt="Sawdust"/>
+            <img src="../images/background.webp" alt="Sawdust"/>
             <h3>Sawdust</h3>
             <p>Useful for animal bedding and composting.</p>
           </div>
@@ -38,12 +38,12 @@ const Home = () => {
       <section className="gallery">
         <h2>Gallery</h2>
         <div className="gallery-grid">
-          <img src="../images/background1.jpg" alt="Lumber"/>
-          <img src="https://source.unsplash.com/300x200/?forest" alt="Forest"/>
-          <img src="https://source.unsplash.com/300x200/?firewood" alt="Firewood"/>
-          <img src="https://source.unsplash.com/300x200/?woodcraft" alt="Woodcraft"/>
-          <img src="https://source.unsplash.com/300x200/?woodpile" alt="Wood Pile"/>
-          <img src="https://source.unsplash.com/300x200/?sawmill" alt="Sawmill"/>
+          <img src="../images/gallery1.jpeg" alt="Lumber"/>
+          <img src="../images/gallery2.webp" alt="Forest"/>
+          <img src="../images/gallery3.jpg" alt="Firewood"/>
+          <img src="../images/gallery4.jpg" alt="Woodcraft"/>
+          <img src="../images/gallery5.avif" alt="Wood Pile"/>
+          <img src="../images/gallery6.jpg" alt="Sawmill"/>
         </div>
       </section>
     </div>
