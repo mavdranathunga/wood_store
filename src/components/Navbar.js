@@ -15,10 +15,10 @@ function Navbar() {
       </div>
 
       <div className={`nav-right ${menuOpen ? "open" : ""}`}>
-        <Link to="/" onClick={() => setMenuOpen(false)}>Home</Link>
-        <Link to="/products" onClick={() => setMenuOpen(false)}>Products</Link>
-        <Link to="/about" onClick={() => setMenuOpen(false)}>About Us</Link>
-        <Link to="/contact" onClick={() => setMenuOpen(false)}>Contact</Link>
+        <Link to="/" onClick={() => {setMenuOpen(false); window.scrollTo(0, 0);}}>Home</Link>
+        <Link to="/products" onClick={() => {setMenuOpen(false); window.scrollTo(0, 0);}}>Products</Link>
+        <Link to="/about" onClick={() => {setMenuOpen(false); window.scrollTo(0, 0);}}>About Us</Link>
+        <Link to="/contact" onClick={() => {setMenuOpen(false); window.scrollTo(0, 0);}}>Contact</Link>
       </div>
 
       {/* Menu Button */}
