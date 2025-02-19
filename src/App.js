@@ -6,6 +6,7 @@ import Contact from "./pages/Contact";
 import About from "./pages/About";
 import Footer from "./components/Footer";
 import Navbar from "./components/Navbar"; 
+import ScrollToTopButton from "./components/ScrollToTopButton";
 import './App.css';
 
 function App() {
@@ -23,8 +24,9 @@ function App() {
           </Routes>
         </div>
 
-        {/* Footer */}
+        <ScrollToTopButton />
         <Footer />
+        
       </div>
     </Router>
   );
