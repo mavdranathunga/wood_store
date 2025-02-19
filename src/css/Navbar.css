@@ -1,0 +1,107 @@
+/* General Navbar Styling */
+.navbar {
+    background: linear-gradient(135deg, #070c31, #2c3e50);
+    padding: 15px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: sticky;
+    top: 0;
+    width: 100%; /* Ensures full width without overflow */
+    z-index: 1000;
+    transition: 0.3s ease-in-out;
+    box-sizing: border-box;
+  }
+  
+  /* Logo */
+  .logo img {
+    height: 50px;
+    width: auto;
+    cursor: pointer;
+    transition: transform 0.3s;
+  }
+  
+  .logo img:hover {
+    transform: scale(1.1);
+  }
+  
+  /* Navigation Links */
+  .nav-right {
+    display: flex;
+    gap: 25px;
+  }
+  
+  .nav-right a {
+    color: white;
+    font-size: 18px;
+    font-weight: 600;
+    text-decoration: none;
+    padding: 10px 15px;
+    transition: all 0.3s ease-in-out;
+    position: relative;
+  }
+  
+  /* Hover Effect */
+  .nav-right a::after {
+    content: "";
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    width: 0;
+    height: 3px;
+    background: #f8b400;
+    transition: 0.3s ease-in-out;
+  }
+  
+  .nav-right a:hover::after {
+    width: 100%;
+    left: 0;
+  }
+  
+  .nav-right a:hover {
+    color: #f8b400;
+  }
+  
+  /* Mobile Menu */
+  .menu-icon {
+    display: none;
+    font-size: 28px;
+    color: white;
+    cursor: pointer;
+    position: absolute;
+    top: 15px; /* Keeps it inside navbar */
+    right: 20px; /* Ensures proper spacing */
+  }
+  
+  /* Responsive Styling */
+  @media (max-width: 768px) {
+    .menu-icon {
+      display: block;
+    }
+  
+    .nav-right {
+      position: fixed;
+      top: 0;
+      right: -250px; /* Start off-screen */
+      background: rgba(7, 12, 49, 0.95);
+      flex-direction: column;
+      width: 250px;
+      height: 100vh;
+      max-height: 100vh; /* Prevents overflow */
+      overflow-y: auto; /* Enables scrolling if content is too long */
+      text-align: center;
+      gap: 20px;
+      padding-top: 60px;
+      transition: right 0.3s ease-in-out;
+    }
+  
+    .nav-right.open {
+      right: 0; /* Slide in */
+    }
+  
+    .nav-right a {
+      display: block;
+      padding: 15px 0;
+    }
+  }
+  

@@ -1,55 +1,8 @@
 /* src/css/App.css */
 
-/* Nav bar*/
-.navbar {
-  background-color: #0f1652;
-  padding: 15px 20px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  position: sticky;
-  top: 0;
-  width: 100%;
-  z-index: 1000;
-}
-
-/* Logo Styling */
-.nav-left {
-  flex: 1;
-}
-
-.logo {
-  height: 50px; /* Adjust size as needed */
-  width: auto;
-  cursor: pointer;
-}
-
-/* Navigation Links */
-.nav-right {
-  display: flex;
-  gap: 20px;
-}
-
-.nav-right a {
-  color: white;
-  text-decoration: none;
-  font-size: 18px;
-  font-weight: bold;
-  padding: 10px 15px;
-  transition: 0.3s;
-}
-
-.nav-right a:hover {
-  background-color: #f8b400;
-  border-radius: 5px;
-  color: black;
-}
-
-
-
-
 html, body {
   height: 100%;
+  width: 100%;
   font-family: Arial, sans-serif;
 }
 
@@ -59,26 +12,7 @@ html, body {
   min-height: 100vh;
 }
 
-.navbar {
-  background-color: #070c31;
-  padding: 15px 0;
-  display: flex;
-  justify-content: center; /* Centers links */
-  gap: 20px;
-  position: sticky;
-  top: 0;
-  width: 100%;
-  z-index: 1000;
-}
 
-.navbar a {
-  color: white;
-  text-decoration: none;
-  font-size: 18px;
-  font-weight: bold;
-  padding: 10px 15px;
-  transition: 0.3s;
-}
 
 .page {
   flex: 1;
