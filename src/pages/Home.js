@@ -7,7 +7,7 @@ const Home = () => {
     <div className="home-container">
       {/* Hero Section */}
       <section className="hero">
-        <h1>Welcome to PGP - Wood Store</h1>
+        <h1>Welcome to PGP Wood Store</h1>
         <p>High-quality wood products for all your needs.</p>
         <button className="explore-btn">Explore Products</button>
       </section>
@@ -38,6 +38,12 @@ const Home = () => {
       <section className="gallery">
         <h2>Gallery</h2>
         <div className="gallery-grid">
+          <img src="../images/gallery1.jpeg" alt="Lumber"/>
+          <img src="../images/gallery2.webp" alt="Forest"/>
+          <img src="../images/gallery3.jpg" alt="Firewood"/>
+          <img src="../images/gallery4.jpg" alt="Woodcraft"/>
+          <img src="../images/gallery5.avif" alt="Wood Pile"/>
+          <img src="../images/gallery6.jpg" alt="Sawmill"/>
           <img src="../images/gallery1.jpeg" alt="Lumber"/>
           <img src="../images/gallery2.webp" alt="Forest"/>
           <img src="../images/gallery3.jpg" alt="Firewood"/>

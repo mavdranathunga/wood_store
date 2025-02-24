@@ -1,8 +1,12 @@
 /* src/css/Products.css */
 .products {
   text-align: center;
+  padding: 20px;
 }
 
+.products .product-grid {
+  padding-top: 30px;
+}
 .product-grid {
   display: flex;
   justify-content: center;
