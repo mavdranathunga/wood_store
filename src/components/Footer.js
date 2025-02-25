@@ -8,7 +8,7 @@ function Footer() {
     <footer className="footer">
       <div className="footer-container">
         <div className="footer-logo">
-          <h2>Wood Store</h2>
+          <img src="/PGP_WOODS_white_logo.png" alt="Wood Store Logo" />
           <p>Your trusted wood supplier for quality and sustainability.</p>
         </div>
         
@@ -30,10 +30,10 @@ function Footer() {
         <div className="footer-social">
           <h3>Follow Us</h3>
           <div className="social-icons">
-            <a href="www.google.com" target="_blank" rel="noopener noreferrer"><FaFacebookF /></a>
-            <a href="www.google.com" target="_blank" rel="noopener noreferrer"><FaTwitter /></a>
-            <a href="www.google.com" target="_blank" rel="noopener noreferrer"><FaInstagram /></a>
-            <a href="www.google.com" target="_blank" rel="noopener noreferrer"><FaLinkedin /></a>
+            <a href="https://facebook.com" target="_blank" rel="noopener noreferrer"><FaFacebookF /></a>
+            <a href="https://www.twitter.com" target="_blank" rel="noopener noreferrer"><FaTwitter /></a>
+            <a href="https://instagram.com" target="_blank" rel="noopener noreferrer"><FaInstagram /></a>
+            <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer"><FaLinkedin /></a>
           </div>
         </div>
       </div>
