@@ -9,7 +9,7 @@
 .hero {
   background: url("../../public/images/background1.jpg") center/cover no-repeat;
   color: rgb(255, 255, 255);
-  height: calc(100vh - 115px); /* Full screen height */
+  height: calc(100vh - 30px); /* Full screen height */
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -18,7 +18,7 @@
   padding: 0px 0px 30px 20px;
   position: relative;
   min-height: fit-content;
-  transition: background 1s ease-in-out;
+  transition: background 1.1s ease-in-out;
 }
 
 .hero::before {
