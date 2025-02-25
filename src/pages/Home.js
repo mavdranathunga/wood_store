@@ -1,15 +1,42 @@
 // src/pages/Home.js
-import React from "react";
+import React, { useEffect, useState, useCallback } from "react";
 import "../css/Home.css"; 
 
 const Home = () => {
+  const [currentIndex, setCurrentIndex] = useState(0);
+
+  // Array of image URLs for background
+  const images = [
+    "/images/background1.jpg",
+    "/images/background2.jpg",
+    "/images/background.webp"
+    // Add more images as needed
+  ];
+
+  // Memoized function to change the next image
+  const nextImage = useCallback(() => {
+    setCurrentIndex((prevIndex) => (prevIndex + 1) % images.length);
+  }, [images.length]); // Ensures the function doesn't change unnecessarily
+
+  // Change the image every 10 seconds
+  useEffect(() => {
+    const interval = setInterval(nextImage, 5000);
+    return () => clearInterval(interval);
+  }, [nextImage]); // Depend on the memoized function
+
   return (
     <div className="home-container">
       {/* Hero Section */}
-      <section className="hero">
+      <section className="hero" style={{ backgroundImage: `url(${images[currentIndex]})` }}>
         <h1>Welcome to PGP Wood Store</h1>
         <p>High-quality wood products for all your needs.</p>
         <button className="explore-btn">Explore Products</button>
+        
+        {/* Image navigation arrows */}
+        {/* <div className="image-nav">
+          <span className="left-arrow" onClick={prevImage}>{"<"}</span>
+          <span className="right-arrow" onClick={nextImage}>{">"}</span>
+        </div> */}
       </section>
 
       {/* Featured Products */}
@@ -38,12 +65,6 @@ const Home = () => {
       <section className="gallery">
         <h2>Gallery</h2>
         <div className="gallery-grid">
-          <img src="../images/gallery1.jpeg" alt="Lumber"/>
-          <img src="../images/gallery2.webp" alt="Forest"/>
-          <img src="../images/gallery3.jpg" alt="Firewood"/>
-          <img src="../images/gallery4.jpg" alt="Woodcraft"/>
-          <img src="../images/gallery5.avif" alt="Wood Pile"/>
-          <img src="../images/gallery6.jpg" alt="Sawmill"/>
           <img src="../images/gallery1.jpeg" alt="Lumber"/>
           <img src="../images/gallery2.webp" alt="Forest"/>
           <img src="../images/gallery3.jpg" alt="Firewood"/>
