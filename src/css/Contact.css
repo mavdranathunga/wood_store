@@ -6,6 +6,7 @@
   padding: 120px 60px 60px 60px;
   background: #ffffff;
   width: 70%;
+  min-width: 480px;
 }
 
 .contact-card {
