@@ -1,3 +1,11 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; /* Include padding and border in element's width and height */
+}
+
+
+
 /* src/css/App.css */
 
 html, body {
@@ -22,13 +30,14 @@ html, body {
   align-items: center;
   /*padding: 20px;*/
   text-align: center;
+  width: 100%;
 }
 
 .footer {
   background-color: #070c31;
   color: white;
   text-align: center;
-  padding: 20px 0;
+  padding: 20px 0px;
   width: 100%;
   margin-top: auto;
 }
