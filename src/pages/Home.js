@@ -1,5 +1,6 @@
 // src/pages/Home.js
 import React, { useEffect, useState, useCallback } from "react";
+import { Link } from "react-router-dom";
 import "../css/Home.css"; 
 
 const Home = () => {
@@ -30,7 +31,10 @@ const Home = () => {
       <section className="hero" style={{ backgroundImage: `url(${images[currentIndex]})` }}>
         <h1>Welcome to PGP Wood Store</h1>
         <p>High-quality wood products for all your needs.</p>
-        <button className="explore-btn">Explore Products</button>
+        <Link to="/products" onClick={() => window.scrollTo(0, 0)}>
+          <button className="explore-btn">Explore Products</button>
+        </Link>
+        
         
         {/* Image navigation arrows */}
         {/* <div className="image-nav">
