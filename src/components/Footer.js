@@ -37,6 +37,9 @@ function Footer() {
           </div>
         </div>
       </div>
+
+      <hr className="footer-line" />
+
       <div className="footer-bottom">
         <p>© {new Date().getFullYear()} Wood Store. All rights reserved.</p>
       </div>

@@ -29,8 +29,13 @@
 .footer-logo img {
   height: 60px;
   width: auto;
-  padding: 10px 0px 0px 0px;
+  padding: 2px 0px 0px 0px;
 }
+
+.footer-logo p {
+  padding-top: 10px;
+}
+
 
 .footer-links, .footer-contact, .footer-social {
   flex: 1;
@@ -73,6 +78,14 @@
 
 .social-icons a:hover {
   color: #f4a261;
+}
+
+.footer-line {
+  width: 70%;
+  margin: 0 auto;
+  border: none;
+  height: 2px;
+  background-color: #cccccc3d;
 }
 
 .footer-bottom {

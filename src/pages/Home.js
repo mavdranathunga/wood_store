@@ -10,7 +10,9 @@ const Home = () => {
   const images = [
     "/images/background1.jpg",
     "/images/background2.jpg",
-    "/images/background.webp"
+    "/images/background.webp",
+    "/images/background3.jpg",
+    "/images/background4.jpg"
     // Add more images as needed
   ];
 
@@ -29,12 +31,11 @@ const Home = () => {
     <div className="home-container">
       {/* Hero Section */}
       <section className="hero" style={{ backgroundImage: `url(${images[currentIndex]})` }}>
-        <h1>Welcome to PGP Wood Store</h1>
+        <h1>Welcome to PGP Wood Store!</h1>
         <p>High-quality wood products for all your needs.</p>
         <Link to="/products" onClick={() => window.scrollTo(0, 0)}>
           <button className="explore-btn">Explore Products</button>
         </Link>
-        
         
         {/* Image navigation arrows */}
         {/* <div className="image-nav">
@@ -43,10 +44,26 @@ const Home = () => {
         </div> */}
       </section>
 
+
       {/* Featured Products */}
       <section className="featured">
         <h2>Our Premium Wood Selection</h2>
         <div className="product-grid">
+          <div className="product-card">
+            <img src="../images/background1.jpg" alt="Wood Logs"/>
+            <h3>Wood Logs</h3>
+            <p>Perfect for fireplace and industrial use.</p>
+          </div>
+          <div className="product-card">
+            <img src="../images/background3.jpg" alt="Wood Chips"/>
+            <h3>Wood Chips</h3>
+            <p>Ideal for gardening and smoking meat.</p>
+          </div>
+          <div className="product-card">
+            <img src="../images/background.webp" alt="Sawdust"/>
+            <h3>Sawdust</h3>
+            <p>Useful for animal bedding and composting.</p>
+          </div>
           <div className="product-card">
             <img src="../images/background1.jpg" alt="Wood Logs"/>
             <h3>Wood Logs</h3>
@@ -62,6 +79,24 @@ const Home = () => {
             <h3>Sawdust</h3>
             <p>Useful for animal bedding and composting.</p>
           </div>
+        </div>
+      </section>
+
+
+      {/* Video-section */}
+      <section className="video-section">
+        <div className="content">
+          <h2>See Our Products in Action</h2>
+          <p>Take a look at our production process and see how we craft high-quality wood products for you!</p>
+        </div>
+
+        <div className="video-container">
+          <iframe
+            src="https://www.youtube.com/embed/Y8FH75XsI3s?si=WzO14wfV2iXbOnyE"
+            title="Wood Products in Action"
+            allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+            allowFullScreen
+          ></iframe>
         </div>
       </section>
 

@@ -95,6 +95,7 @@
   color: black;
 }
 
+
 /* Hover Effect */
 .nav-right a::after {
   content: "";
@@ -135,6 +136,10 @@
 
  .navbar.scrolled .menu-icon, .navbar:hover .menu-icon{
   color: black;
+}
+
+.navbar .nav-right.open a, .navbar .nav-right.open .menu-icon {
+  color: white;
 }
 
 /* Responsive Styling */
