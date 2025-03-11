@@ -1,74 +1,144 @@
+/* General Styling */
 .about-container {
-  max-width: 1000px;
+  max-width: 1200px;
   margin: auto;
+  padding: 100px 20px 20px 20px;
   text-align: center;
-  font-family: Arial, sans-serif;
+  font-family: "Poppins", sans-serif;
   color: #333;
-  padding: 120px 20px 20px 20px;
-  top: 100px;
 }
 
+/* Hero Section */
 .hero-section {
-  position: relative;
-  width: 100%;
-}
-
-.hero-image {
-  width: 100%;
-  height: 300px;
-  object-fit: cover;
+  background: linear-gradient(135deg, #2c3e50, #3498db);
+  color: white;
+  padding: 80px 20px;
+  text-align: center;
   border-radius: 10px;
 }
 
-.overlay {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  background: rgba(0, 0, 0, 0.6);
-  color: white;
-  padding: 20px;
-  border-radius: 5px;
+.hero-heading {
+  font-size: 42px;
+  font-weight: bold;
+  margin: 0;
+  text-transform: uppercase;
 }
 
-.about-content {
-  padding: 30px 20px;
+.hero-sub-heading {
+  font-size: 20px;
+  font-weight: bold;
+  margin: 0;
+  text-transform: uppercase;
+  margin-top: 25px;
 }
 
-.mission-vision {
+.hero-subheading {
+  font-size: 17px;
+  margin-top: 5px;
+}
+
+/* Sections */
+.intro, .our-services, .what-we-do, .the-story, .contact {
+  margin: 60px 0;
+  padding: 40px;
+  background: #f8f9fa;
+  border-radius: 10px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+}
+
+.intro:hover, .our-services:hover, .what-we-do:hover, .the-story:hover, .contact:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+h2 {
+  font-size: 32px;
+  color: #2c3e50;
+  margin-bottom: 20px;
+}
+
+/* Services Section */
+.services-grid {
   display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.service-item {
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  width: 300px;
+  text-align: center;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease-in-out;
+}
+
+.service-item:hover {
+  transform: scale(1.05);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+.icon {
+  font-size: 40px;
+  color: #3498db;
+  margin-bottom: 10px;
+}
+
+/* Timeline Section */
+.story-timeline {
+  display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
   gap: 20px;
-  padding: 30px 0px;
 }
 
-.mission, .vision {
-  width: 48%;
-  background: #f8f8f8;
-  padding: 15px;
+.timeline-item {
+  background: white;
+  padding: 20px;
   border-radius: 10px;
+  width: 48%;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease-in-out;
 }
 
-.why-choose-us ul {
-  list-style: none;
-  padding: 0;
+.timeline-item:hover {
+  transform: scale(1.03);
 }
 
-.why-choose-us li {
-  margin: 10px 0;
-  font-weight: bold;
-}
-
-
+/* Contact Section */
 .contact {
-  padding: 20px 0px;
+  background: linear-gradient(135deg, #3498db, #2c3e50);
+  color: white;
 }
 
 .contact a {
-  color: #007BFF;
+  color: #ffcc00;
   text-decoration: none;
 }
 
 .contact a:hover {
   text-decoration: underline;
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 768px) {
+  .hero-heading {
+    font-size: 32px;
+  }
+
+  .hero-subheading {
+    font-size: 18px;
+  }
+
+  .services-grid {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .timeline-item {
+    width: 100%;
+  }
 }
